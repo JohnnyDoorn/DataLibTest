@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: JASP 0.17.2
+Data-Archive-Version: 1.0.2
+JASP-Archive-Version: 3.1

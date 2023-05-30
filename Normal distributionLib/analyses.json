@@ -1,0 +1,1800 @@
+{
+	"analyses" : 
+	[
+		{
+			"dynamicModule" : 
+			{
+				"analysisEntry" : "LDgaussianunivariate",
+				"moduleMaintainer" : "JASP Team <info@jasp-stats.org>",
+				"moduleName" : "jaspDistributions",
+				"moduleVersion" : "0.17.2",
+				"moduleWebsite" : "www.jasp-stats.org"
+			},
+			"hasReport" : false,
+			"id" : 1,
+			"name" : "LDgaussianunivariate",
+			"options" : 
+			{
+				".meta" : 
+				{
+					"newVariableName" : 
+					{
+						"shouldEncode" : true
+					},
+					"variable" : 
+					{
+						"shouldEncode" : true
+					}
+				},
+				"andersonDarling" : true,
+				"ciInterval" : true,
+				"ciIntervalInterval" : 0.94999999999999996,
+				"cramerVonMisses" : true,
+				"ecdf" : true,
+				"estCDF" : true,
+				"estPDF" : true,
+				"explanatoryText" : false,
+				"formulas" : false,
+				"highlightDensity" : true,
+				"highlightProbability" : true,
+				"highlightType" : "minmax",
+				"histogram" : true,
+				"histogramBins" : 30,
+				"kolmogorovSmirnov" : true,
+				"lower_max" : 0.0,
+				"max" : 1.0,
+				"max_x" : 3.0,
+				"methodMLE" : true,
+				"min" : 0.0,
+				"min_x" : -3.0,
+				"moments" : true,
+				"momentsUpTo" : 2,
+				"mu" : 0.0,
+				"newVariableName" : "",
+				"outputEstimates" : true,
+				"outputSE" : true,
+				"parametrization" : "sigma2",
+				"parsSupportMoments" : true,
+				"plotCDF" : true,
+				"plotHeight" : 320,
+				"plotPDF" : true,
+				"plotQF" : true,
+				"plotWidth" : 480,
+				"ppPlotCi" : false,
+				"ppPlotCiLevel" : 0.94999999999999996,
+				"ppplot" : true,
+				"qqPlotCi" : false,
+				"qqPlotCiLevel" : 0.94999999999999996,
+				"qqplot" : true,
+				"sampleSize" : 1000,
+				"shapiroWilk" : true,
+				"simulateNow" : false,
+				"summary" : true,
+				"upper_min" : 0.0,
+				"varValue" : 1.0,
+				"variable" : "Normal100(mu=0,sigma=1)"
+			},
+			"progress" : null,
+			"rSources" : {},
+			"results" : 
+			{
+				".meta" : 
+				[
+					{
+						"info" : "",
+						"mustBe" : 
+						[
+							"parametrization",
+							"parsSupportMoments"
+						],
+						"mustContain" : {},
+						"name" : "parsSupportMoments",
+						"title" : "Parameters, Support, and Moments",
+						"type" : "htmlNode"
+					},
+					{
+						"info" : "",
+						"meta" : 
+						[
+							{
+								"info" : "",
+								"mustBe" : 
+								[
+									"highlightDensity",
+									"highlightProbability",
+									"highlightType",
+									"lower_max",
+									"max",
+									"max_x",
+									"min",
+									"min_x",
+									"mu",
+									"parametrization",
+									"plotPDF",
+									"upper_min",
+									"varValue"
+								],
+								"mustContain" : {},
+								"name" : "plotPDF_pdfPlot",
+								"title" : "Density Plot",
+								"type" : "image"
+							}
+						],
+						"mustBe" : 
+						[
+							"mu",
+							"parametrization",
+							"varValue"
+						],
+						"mustContain" : {},
+						"name" : "plotPDF",
+						"title" : "Probability Density Function",
+						"type" : "collection"
+					},
+					{
+						"info" : "",
+						"meta" : 
+						[
+							{
+								"info" : "",
+								"mustBe" : 
+								[
+									"highlightDensity",
+									"highlightProbability",
+									"highlightType",
+									"lower_max",
+									"max",
+									"max_x",
+									"min",
+									"min_x",
+									"mu",
+									"parametrization",
+									"plotCDF",
+									"upper_min",
+									"varValue"
+								],
+								"mustContain" : {},
+								"name" : "plotCDF_cdfPlot",
+								"title" : "Cumulative Probability Plot",
+								"type" : "image"
+							}
+						],
+						"mustBe" : 
+						[
+							"mu",
+							"parametrization",
+							"varValue"
+						],
+						"mustContain" : {},
+						"name" : "plotCDF",
+						"title" : "Cumulative Distribution Function",
+						"type" : "collection"
+					},
+					{
+						"info" : "",
+						"meta" : 
+						[
+							{
+								"info" : "",
+								"mustBe" : 
+								[
+									"max_x",
+									"min_x",
+									"mu",
+									"parametrization",
+									"plotQF",
+									"varValue"
+								],
+								"mustContain" : {},
+								"name" : "plotQF_qfPlot",
+								"title" : "Quantile Plot",
+								"type" : "image"
+							}
+						],
+						"mustBe" : 
+						[
+							"mu",
+							"parametrization",
+							"varValue"
+						],
+						"mustContain" : {},
+						"name" : "plotQF",
+						"title" : "Quantile Function",
+						"type" : "collection"
+					},
+					{
+						"info" : "",
+						"meta" : 
+						[
+							{
+								"info" : "",
+								"mustBe" : 
+								[
+									"simulateNow",
+									"summary",
+									"variable"
+								],
+								"mustContain" : {},
+								"name" : "dataContainer_summary",
+								"title" : "Descriptives",
+								"type" : "table"
+							},
+							{
+								"info" : "",
+								"mustBe" : 
+								[
+									"moments",
+									"momentsUpTo",
+									"simulateNow",
+									"variable"
+								],
+								"mustContain" : {},
+								"name" : "dataContainer_moments",
+								"title" : "Observed Moments",
+								"type" : "table"
+							},
+							{
+								"info" : "",
+								"mustBe" : 
+								[
+									"histogram",
+									"histogramBins",
+									"simulateNow",
+									"variable"
+								],
+								"mustContain" : {},
+								"name" : "dataContainer_histogram",
+								"title" : "Histogram",
+								"type" : "image"
+							},
+							{
+								"info" : "",
+								"mustBe" : 
+								[
+									"ecdf",
+									"simulateNow",
+									"variable"
+								],
+								"mustContain" : {},
+								"name" : "dataContainer_ecdf",
+								"title" : "Empirical Cumulative Distribution",
+								"type" : "image"
+							}
+						],
+						"mustBe" : 
+						[
+							"simulateNow",
+							"variable"
+						],
+						"mustContain" : {},
+						"name" : "dataContainer",
+						"title" : "Overview - Normal100(mu=0,sigma=1)",
+						"type" : "collection"
+					},
+					{
+						"info" : "",
+						"meta" : 
+						[
+							{
+								"info" : "",
+								"mustBe" : 
+								[
+									"ciInterval",
+									"ciIntervalInterval",
+									"methodMLE",
+									"mu",
+									"outputEstimates",
+									"outputSE",
+									"parametrization",
+									"simulateNow",
+									"varValue",
+									"variable"
+								],
+								"mustContain" : {},
+								"name" : "mleContainer_estParametersTable",
+								"title" : "Estimated Parameters",
+								"type" : "table"
+							},
+							{
+								"info" : "",
+								"meta" : 
+								[
+									{
+										"info" : "",
+										"mustBe" : 
+										[
+											"andersonDarling",
+											"cramerVonMisses",
+											"kolmogorovSmirnov",
+											"methodMLE",
+											"shapiroWilk",
+											"simulateNow",
+											"variable"
+										],
+										"mustContain" : {},
+										"name" : "mleContainer_mleFitAssessment_fitStatisticsTable",
+										"title" : "Fit Statistics",
+										"type" : "table"
+									},
+									{
+										"info" : "",
+										"mustBe" : 
+										[
+											"estPDF",
+											"simulateNow",
+											"variable"
+										],
+										"mustContain" : {},
+										"name" : "mleContainer_mleFitAssessment_estPDF",
+										"title" : "Histogram vs. Theoretical PDF",
+										"type" : "image"
+									},
+									{
+										"info" : "",
+										"mustBe" : 
+										[
+											"qqPlotCi",
+											"qqPlotCiLevel",
+											"qqplot",
+											"simulateNow",
+											"variable"
+										],
+										"mustContain" : {},
+										"name" : "mleContainer_mleFitAssessment_qqplot",
+										"title" : "Q-Q plot",
+										"type" : "image"
+									},
+									{
+										"info" : "",
+										"mustBe" : 
+										[
+											"estCDF",
+											"simulateNow",
+											"variable"
+										],
+										"mustContain" : {},
+										"name" : "mleContainer_mleFitAssessment_estCDF",
+										"title" : "Empirical vs. Theoretical CDF",
+										"type" : "image"
+									},
+									{
+										"info" : "",
+										"mustBe" : 
+										[
+											"ppPlotCi",
+											"ppPlotCiLevel",
+											"ppplot",
+											"simulateNow",
+											"variable"
+										],
+										"mustContain" : {},
+										"name" : "mleContainer_mleFitAssessment_ppplot",
+										"title" : "P-P plot",
+										"type" : "image"
+									}
+								],
+								"mustBe" : 
+								[
+									"simulateNow",
+									"variable"
+								],
+								"mustContain" : {},
+								"name" : "mleContainer_mleFitAssessment",
+								"title" : "Fit Assessment",
+								"type" : "collection"
+							}
+						],
+						"mustBe" : 
+						[
+							"simulateNow",
+							"variable"
+						],
+						"mustContain" : {},
+						"name" : "mleContainer",
+						"title" : "Maximum likelihood",
+						"type" : "collection"
+					}
+				],
+				"citation" : 
+				[
+					"JASP Team (2023). JASP (Version 0.17.2) [Computer software]."
+				],
+				"dataContainer" : 
+				{
+					"collection" : 
+					{
+						"dataContainer_ecdf" : 
+						{
+							"aspectRatio" : 0.0,
+							"convertible" : true,
+							"data" : "resources/1/_4_t1681915996978.png",
+							"editOptions" : 
+							{
+								"error" : "success",
+								"xAxis" : 
+								{
+									"settings" : 
+									{
+										"breaks" : 
+										[
+											-2,
+											-1,
+											0,
+											1,
+											2
+										],
+										"breaksType" : "range",
+										"expand" : 
+										[
+											0.050000000000000003,
+											0,
+											0.050000000000000003,
+											0
+										],
+										"labels" : 
+										[
+											"-2",
+											"-1",
+											"0",
+											"1",
+											"2"
+										],
+										"limits" : 
+										[
+											-2.4361698758952501,
+											2.6417795365552501
+										],
+										"limitsType" : "manual",
+										"range" : 
+										[
+											-2,
+											2,
+											1
+										],
+										"title" : "Normal100(mu=0,sigma=1)",
+										"titleType" : "character"
+									},
+									"type" : "ScaleContinuous"
+								},
+								"yAxis" : 
+								{
+									"settings" : 
+									{
+										"breaks" : 
+										[
+											0,
+											0.25,
+											0.5,
+											0.75,
+											1
+										],
+										"breaksType" : "manual",
+										"expand" : 
+										[
+											0.050000000000000003,
+											0,
+											0.050000000000000003,
+											0
+										],
+										"labels" : 
+										[
+											"0.00",
+											"0.25",
+											"0.50",
+											"0.75",
+											"1.00"
+										],
+										"limits" : 
+										[
+											0,
+											1
+										],
+										"limitsType" : "data",
+										"range" : 
+										[
+											0,
+											1,
+											0.25
+										],
+										"title" : "\"Freq\" ~ (\"Normal100(mu=0,sigma=1)\" <= x)",
+										"titleType" : "expression"
+									},
+									"type" : "ScaleContinuous"
+								}
+							},
+							"editable" : false,
+							"errorType" : "fatalError",
+							"height" : 320,
+							"name" : "dataContainer_ecdf",
+							"reasonNotEditable" : "unknown reason",
+							"revision" : 0,
+							"status" : "complete",
+							"title" : "Empirical Cumulative Distribution",
+							"width" : 500
+						},
+						"dataContainer_histogram" : 
+						{
+							"aspectRatio" : 0.0,
+							"convertible" : true,
+							"data" : "resources/1/_3_t1681915996845.png",
+							"editOptions" : 
+							{
+								"error" : "success",
+								"xAxis" : 
+								{
+									"settings" : 
+									{
+										"breaks" : 
+										[
+											-2,
+											-1,
+											0,
+											1,
+											2
+										],
+										"breaksType" : "range",
+										"expand" : 
+										[
+											0.050000000000000003,
+											0
+										],
+										"labels" : 
+										[
+											"-2",
+											"-1",
+											"0",
+											"1",
+											"2"
+										],
+										"limits" : 
+										[
+											-2.2146998871774999,
+											2.4016177605047799
+										],
+										"limitsType" : "manual",
+										"range" : 
+										[
+											-2,
+											2,
+											1
+										],
+										"title" : "Normal100(mu=0,sigma=1)",
+										"titleType" : "character"
+									},
+									"type" : "ScaleContinuous"
+								},
+								"yAxis" : 
+								{
+									"settings" : 
+									{
+										"breaks" : 
+										[
+											0,
+											0.029999999999999999,
+											0.059999999999999998,
+											0.089999999999999997
+										],
+										"breaksType" : "manual",
+										"expand" : 
+										[
+											0.050000000000000003,
+											0,
+											0.050000000000000003,
+											0
+										],
+										"labels" : 
+										[
+											"0.00",
+											"0.03",
+											"0.06",
+											"0.09"
+										],
+										"limits" : 
+										[
+											0,
+											0.11
+										],
+										"limitsType" : "data",
+										"range" : 
+										[
+											0,
+											0.089999999999999997,
+											0.029999999999999999
+										],
+										"title" : "Rel. Freq (Normal100(mu=0,sigma=1) in bin)",
+										"titleType" : "character"
+									},
+									"type" : "ScaleContinuous"
+								}
+							},
+							"editable" : false,
+							"errorType" : "fatalError",
+							"height" : 320,
+							"name" : "dataContainer_histogram",
+							"reasonNotEditable" : "unknown reason",
+							"revision" : 0,
+							"status" : "complete",
+							"title" : "Histogram",
+							"width" : 500
+						},
+						"dataContainer_moments" : 
+						{
+							"casesAcrossColumns" : false,
+							"data" : 
+							[
+								{
+									"central" : 0.13041510967589587,
+									"moment" : 1,
+									"raw" : 0.13041510967589587
+								},
+								{
+									"central" : 0.82808243717972996,
+									"moment" : 2,
+									"raw" : 0.84509053801150591
+								}
+							],
+							"footnotes" : [],
+							"name" : "dataContainer_moments",
+							"overTitle" : false,
+							"schema" : 
+							{
+								"fields" : 
+								[
+									{
+										"name" : "moment",
+										"title" : "Moment",
+										"type" : "integer"
+									},
+									{
+										"format" : "sf:4;dp:3",
+										"name" : "raw",
+										"title" : "Raw",
+										"type" : "number"
+									},
+									{
+										"format" : "sf:4;dp:3",
+										"name" : "central",
+										"title" : "Central",
+										"type" : "number"
+									}
+								]
+							},
+							"status" : "complete",
+							"title" : "Observed Moments"
+						},
+						"dataContainer_summary" : 
+						{
+							"casesAcrossColumns" : false,
+							"data" : 
+							[
+								{
+									"max" : 2.4016177605047764,
+									"mean" : 0.13041510967589587,
+									"median" : 0.11390916078854416,
+									"min" : -2.2146998871774999,
+									"quantile25" : -0.49424254907937781,
+									"quantile75" : 0.70433710614055012,
+									"sampleSize" : 100,
+									"sd" : 0.9145747133187927,
+									"var" : 0.83644690624215179,
+									"variable" : "Normal100(mu=0,sigma=1)"
+								}
+							],
+							"footnotes" : [],
+							"name" : "dataContainer_summary",
+							"overTitle" : false,
+							"schema" : 
+							{
+								"fields" : 
+								[
+									{
+										"combine" : true,
+										"name" : "variable",
+										"title" : "Variable",
+										"type" : "string"
+									},
+									{
+										"name" : "sampleSize",
+										"title" : "n",
+										"type" : "integer"
+									},
+									{
+										"format" : "sf:4",
+										"name" : "mean",
+										"title" : "Mean",
+										"type" : "number"
+									},
+									{
+										"format" : "sf:4",
+										"name" : "var",
+										"title" : "Variance",
+										"type" : "number"
+									},
+									{
+										"format" : "sf:4",
+										"name" : "sd",
+										"title" : "Std. deviation",
+										"type" : "number"
+									},
+									{
+										"format" : "sf:4",
+										"name" : "min",
+										"title" : "Minimum",
+										"type" : "number"
+									},
+									{
+										"format" : "sf:4",
+										"name" : "quantile25",
+										"title" : "25% Quantile",
+										"type" : "number"
+									},
+									{
+										"format" : "sf:4",
+										"name" : "median",
+										"title" : "Median",
+										"type" : "number"
+									},
+									{
+										"format" : "sf:4",
+										"name" : "quantile75",
+										"title" : "75% Quantile",
+										"type" : "number"
+									},
+									{
+										"format" : "sf:4",
+										"name" : "max",
+										"title" : "Maximum",
+										"type" : "number"
+									}
+								]
+							},
+							"status" : "complete",
+							"title" : "Descriptives"
+						}
+					},
+					"initCollapsed" : false,
+					"name" : "dataContainer",
+					"title" : "Overview - Normal100(mu=0,sigma=1)"
+				},
+				"mleContainer" : 
+				{
+					"collection" : 
+					{
+						"mleContainer_estParametersTable" : 
+						{
+							"casesAcrossColumns" : false,
+							"citation" : 
+							[
+								"John Fox and Sanford Weisberg (2011). An R Companion to Applied Regression, Second Edition. Thousand Oaks CA: Sage. URL: http://socserv.socsci.mcmaster.ca/jfox/Books/Companion.",
+								"Marie Laure Delignette-Muller, Christophe Dutang (2015). fitdistrplus: An R Package for Fitting Distributions. Journal of Statistical Software, 64(4), 1-34. URL: http://www.jstatsoft.org/v64/i04/."
+							],
+							"data" : 
+							[
+								{
+									"estimate" : 0.13042205227940901,
+									"lower" : -0.047931752581374221,
+									"parName" : "\u03bc",
+									"se" : 0.090998511333685375,
+									"upper" : 0.30877585714019223
+								},
+								{
+									"estimate" : 0.82807290623892038,
+									"lower" : 0.59855025332004097,
+									"parName" : "\u03c3\u00b2",
+									"se" : 0.11710554618825901,
+									"upper" : 1.0575955591577997
+								}
+							],
+							"footnotes" : 
+							[
+								{
+									"cols" : null,
+									"myOrder" : 0,
+									"rows" : null,
+									"symbol" : "<em>Note.</em>",
+									"text" : "Standard errors and confidence intervals were calculated using the delta method."
+								}
+							],
+							"name" : "mleContainer_estParametersTable",
+							"overTitle" : false,
+							"schema" : 
+							{
+								"fields" : 
+								[
+									{
+										"name" : "parName",
+										"title" : "Parameter",
+										"type" : "string"
+									},
+									{
+										"format" : "sf:4;dp:3",
+										"name" : "estimate",
+										"title" : "Estimate",
+										"type" : "number"
+									},
+									{
+										"format" : "sf:4;dp:3",
+										"name" : "se",
+										"title" : "SE",
+										"type" : "number"
+									},
+									{
+										"format" : "sf:4;dp:3",
+										"name" : "lower",
+										"overTitle" : "95% CI",
+										"title" : "Lower",
+										"type" : "number"
+									},
+									{
+										"format" : "sf:4;dp:3",
+										"name" : "upper",
+										"overTitle" : "95% CI",
+										"title" : "Upper",
+										"type" : "number"
+									}
+								]
+							},
+							"status" : "complete",
+							"title" : "Estimated Parameters"
+						},
+						"mleContainer_mleFitAssessment" : 
+						{
+							"collection" : 
+							{
+								"mleContainer_mleFitAssessment_estCDF" : 
+								{
+									"aspectRatio" : 0.0,
+									"convertible" : true,
+									"data" : "resources/1/_7_t1681915998115.png",
+									"editOptions" : 
+									{
+										"error" : "success",
+										"xAxis" : 
+										{
+											"settings" : 
+											{
+												"breaks" : 
+												[
+													-2,
+													-1,
+													0,
+													1,
+													2
+												],
+												"breaksType" : "range",
+												"expand" : 
+												[
+													0.050000000000000003,
+													0,
+													0.050000000000000003,
+													0
+												],
+												"labels" : 
+												[
+													"-2",
+													"-1",
+													"0",
+													"1",
+													"2"
+												],
+												"limits" : 
+												[
+													-2.2146998871774999,
+													2.4016177605047799
+												],
+												"limitsType" : "manual",
+												"range" : 
+												[
+													-2,
+													2,
+													1
+												],
+												"title" : "Normal100(mu=0,sigma=1)",
+												"titleType" : "character"
+											},
+											"type" : "ScaleContinuous"
+										},
+										"yAxis" : 
+										{
+											"settings" : 
+											{
+												"breaks" : 
+												[
+													0,
+													0.25,
+													0.5,
+													0.75,
+													1
+												],
+												"breaksType" : "manual",
+												"expand" : 
+												[
+													0.050000000000000003,
+													0,
+													0.050000000000000003,
+													0
+												],
+												"labels" : 
+												[
+													"0.00",
+													"0.25",
+													"0.50",
+													"0.75",
+													"1.00"
+												],
+												"limits" : 
+												[
+													0,
+													1
+												],
+												"limitsType" : "breaks",
+												"range" : 
+												[
+													0,
+													1,
+													0.25
+												],
+												"title" : "\"Probability\" ~ (X <= x)",
+												"titleType" : "expression"
+											},
+											"type" : "ScaleContinuous"
+										}
+									},
+									"editable" : false,
+									"errorType" : "fatalError",
+									"height" : 320,
+									"name" : "mleContainer_mleFitAssessment_estCDF",
+									"reasonNotEditable" : "unknown reason",
+									"revision" : 0,
+									"status" : "complete",
+									"title" : "Empirical vs. Theoretical CDF",
+									"width" : 320
+								},
+								"mleContainer_mleFitAssessment_estPDF" : 
+								{
+									"aspectRatio" : 0.0,
+									"convertible" : true,
+									"data" : "resources/1/_5_t1681915997821.png",
+									"editOptions" : 
+									{
+										"error" : "success",
+										"xAxis" : 
+										{
+											"settings" : 
+											{
+												"breaks" : 
+												[
+													-2,
+													-1,
+													0,
+													1,
+													2
+												],
+												"breaksType" : "range",
+												"expand" : 
+												[
+													0.050000000000000003,
+													0,
+													0.050000000000000003,
+													0
+												],
+												"labels" : 
+												[
+													"-2",
+													"-1",
+													"0",
+													"1",
+													"2"
+												],
+												"limits" : 
+												[
+													-2.2146998871774999,
+													2.4016177605047799
+												],
+												"limitsType" : "manual",
+												"range" : 
+												[
+													-2,
+													2,
+													1
+												],
+												"title" : "Normal100(mu=0,sigma=1)",
+												"titleType" : "character"
+											},
+											"type" : "ScaleContinuous"
+										},
+										"yAxis" : 
+										{
+											"settings" : 
+											{
+												"breaks" : 
+												[
+													0,
+													0.20000000000000001,
+													0.40000000000000002,
+													0.59999999999999998
+												],
+												"breaksType" : "manual",
+												"expand" : 
+												[
+													0.050000000000000003,
+													0,
+													0.050000000000000003,
+													0
+												],
+												"labels" : 
+												[
+													"0.0",
+													"0.2",
+													"0.4",
+													"0.6"
+												],
+												"limits" : 
+												[
+													0,
+													0.691026970728847
+												],
+												"limitsType" : "data",
+												"range" : 
+												[
+													0,
+													0.59999999999999998,
+													0.20000000000000001
+												],
+												"title" : "Density",
+												"titleType" : "character"
+											},
+											"type" : "ScaleContinuous"
+										}
+									},
+									"editable" : false,
+									"errorType" : "fatalError",
+									"height" : 320,
+									"name" : "mleContainer_mleFitAssessment_estPDF",
+									"reasonNotEditable" : "unknown reason",
+									"revision" : 0,
+									"status" : "complete",
+									"title" : "Histogram vs. Theoretical PDF",
+									"width" : 320
+								},
+								"mleContainer_mleFitAssessment_fitStatisticsTable" : 
+								{
+									"casesAcrossColumns" : false,
+									"citation" : 
+									[
+										"Julian Faraway, George Marsaglia, John Marsaglia and Adrian Baddeley (2017). goftest: Classical Goodness-of-Fit Tests for Univariate Distributions. R package version 1.1-1. https://CRAN.R-project.org/package=goftest"
+									],
+									"data" : 
+									[
+										{
+											"p.value" : 0.9927843244780854,
+											"statistic" : 0.042923063081237334,
+											"test" : "Kolmogorov-Smirnov"
+										},
+										{
+											"p.value" : 0.99519059575298674,
+											"statistic" : 0.021799983563355472,
+											"test" : "Cram\u00e9r-von Mises"
+										},
+										{
+											"p.value" : 0.99944483897309311,
+											"statistic" : 0.13430318292553522,
+											"test" : "Anderson-Darling"
+										},
+										{
+											"p.value" : 0.99421153188592593,
+											"statistic" : 0.99611914172217353,
+											"test" : "Shapiro-Wilk"
+										}
+									],
+									"footnotes" : [],
+									"name" : "mleContainer_mleFitAssessment_fitStatisticsTable",
+									"overTitle" : false,
+									"schema" : 
+									{
+										"fields" : 
+										[
+											{
+												"name" : "test",
+												"title" : "Test",
+												"type" : "string"
+											},
+											{
+												"format" : "sf:4;dp:3",
+												"name" : "statistic",
+												"title" : "Statistic",
+												"type" : "number"
+											},
+											{
+												"format" : "dp:3;p:.001",
+												"name" : "p.value",
+												"title" : "p",
+												"type" : "pvalue"
+											}
+										]
+									},
+									"status" : "complete",
+									"title" : "Fit Statistics"
+								},
+								"mleContainer_mleFitAssessment_ppplot" : 
+								{
+									"aspectRatio" : 0.0,
+									"convertible" : true,
+									"data" : "resources/1/_8_t1681915998278.png",
+									"editOptions" : 
+									{
+										"error" : "success",
+										"xAxis" : 
+										{
+											"settings" : 
+											{
+												"breaks" : 
+												[
+													0,
+													0.25,
+													0.5,
+													0.75,
+													1
+												],
+												"breaksType" : "manual",
+												"expand" : 
+												[
+													0,
+													0.050000000000000003,
+													0,
+													0.10000000000000001
+												],
+												"labels" : 
+												[
+													"0.00",
+													"0.25",
+													"0.50",
+													"0.75",
+													"1.00"
+												],
+												"limits" : 
+												[
+													0,
+													1
+												],
+												"limitsType" : "breaks",
+												"range" : 
+												[
+													0,
+													1,
+													0.25
+												],
+												"title" : "Theoretical",
+												"titleType" : "character"
+											},
+											"type" : "ScaleContinuous"
+										},
+										"yAxis" : 
+										{
+											"settings" : 
+											{
+												"breaks" : 
+												[
+													0,
+													0.25,
+													0.5,
+													0.75,
+													1
+												],
+												"breaksType" : "manual",
+												"expand" : 
+												[
+													0,
+													0.050000000000000003,
+													0,
+													0.10000000000000001
+												],
+												"labels" : 
+												[
+													"0.00",
+													"0.25",
+													"0.50",
+													"0.75",
+													"1.00"
+												],
+												"limits" : 
+												[
+													0,
+													1
+												],
+												"limitsType" : "breaks",
+												"range" : 
+												[
+													0,
+													1,
+													0.25
+												],
+												"title" : "Sample",
+												"titleType" : "character"
+											},
+											"type" : "ScaleContinuous"
+										}
+									},
+									"editable" : false,
+									"errorType" : "fatalError",
+									"height" : 320,
+									"name" : "mleContainer_mleFitAssessment_ppplot",
+									"reasonNotEditable" : "unknown reason",
+									"revision" : 0,
+									"status" : "complete",
+									"title" : "P-P plot",
+									"width" : 320
+								},
+								"mleContainer_mleFitAssessment_qqplot" : 
+								{
+									"aspectRatio" : 0.0,
+									"convertible" : true,
+									"data" : "resources/1/_6_t1681915998000.png",
+									"editOptions" : 
+									{
+										"error" : "success",
+										"xAxis" : 
+										{
+											"settings" : 
+											{
+												"breaks" : 
+												[
+													-3,
+													-2,
+													-1,
+													0,
+													1,
+													2,
+													3
+												],
+												"breaksType" : "range",
+												"expand" : 
+												[
+													0.050000000000000003,
+													0,
+													0.050000000000000003,
+													0
+												],
+												"labels" : 
+												[
+													"-3",
+													"-2",
+													"-1",
+													"0",
+													"1",
+													"2",
+													"3"
+												],
+												"limits" : 
+												[
+													-3,
+													3
+												],
+												"limitsType" : "breaks",
+												"range" : 
+												[
+													-3,
+													3,
+													1
+												],
+												"title" : "Theoretical",
+												"titleType" : "character"
+											},
+											"type" : "ScaleContinuous"
+										},
+										"yAxis" : 
+										{
+											"settings" : 
+											{
+												"breaks" : 
+												[
+													-3,
+													-2,
+													-1,
+													0,
+													1,
+													2,
+													3
+												],
+												"breaksType" : "range",
+												"expand" : 
+												[
+													0.050000000000000003,
+													0,
+													0.050000000000000003,
+													0
+												],
+												"labels" : 
+												[
+													"-3",
+													"-2",
+													"-1",
+													"0",
+													"1",
+													"2",
+													"3"
+												],
+												"limits" : 
+												[
+													-3,
+													3
+												],
+												"limitsType" : "breaks",
+												"range" : 
+												[
+													-3,
+													3,
+													1
+												],
+												"title" : "Sample",
+												"titleType" : "character"
+											},
+											"type" : "ScaleContinuous"
+										}
+									},
+									"editable" : false,
+									"errorType" : "fatalError",
+									"height" : 320,
+									"name" : "mleContainer_mleFitAssessment_qqplot",
+									"reasonNotEditable" : "unknown reason",
+									"revision" : 0,
+									"status" : "complete",
+									"title" : "Q-Q plot",
+									"width" : 320
+								}
+							},
+							"initCollapsed" : false,
+							"name" : "mleContainer_mleFitAssessment",
+							"title" : "Fit Assessment"
+						}
+					},
+					"initCollapsed" : false,
+					"name" : "mleContainer",
+					"title" : "Maximum likelihood"
+				},
+				"name" : "",
+				"parsSupportMoments" : 
+				{
+					"class" : "",
+					"elementType" : "p",
+					"maxWidth" : "15cm",
+					"name" : "parsSupportMoments",
+					"rawtext" : "<b>Parameters</b>\n      mean: &mu; \u2208 \u211d \n variance: &sigma;<sup>2</sup> \u2208 \u211d<sup>+</sup>\n\n      <b>Support</b>\n      x \u2208 \u211d\n\n      <b>Moments</b>\n      E(X) = &mu;\n      Var(X) = &sigma;<sup>2</sup>",
+					"text" : "<p><b>Parameters</b><br/>      mean: &mu; \u2208 \u211d <br/> variance: &sigma;<sup>2</sup> \u2208 \u211d<sup>+</sup><br/><br/>      <b>Support</b><br/>      x \u2208 \u211d<br/><br/>      <b>Moments</b><br/>      E(X) = &mu;<br/>      Var(X) = &sigma;<sup>2</sup> </p>",
+					"title" : "Parameters, Support, and Moments"
+				},
+				"plotCDF" : 
+				{
+					"collection" : 
+					{
+						"plotCDF_cdfPlot" : 
+						{
+							"aspectRatio" : 0.0,
+							"convertible" : true,
+							"data" : "resources/1/_1_t1681915996416.png",
+							"editOptions" : 
+							{
+								"error" : "success",
+								"xAxis" : 
+								{
+									"settings" : 
+									{
+										"breaks" : 
+										[
+											-3,
+											-2,
+											-1,
+											0,
+											1,
+											2,
+											3
+										],
+										"breaksType" : "range",
+										"expand" : 
+										[
+											0.050000000000000003,
+											0,
+											0.050000000000000003,
+											0
+										],
+										"labels" : 
+										[
+											"-3",
+											"-2",
+											"-1",
+											"0",
+											"1",
+											"2",
+											"3"
+										],
+										"limits" : 
+										[
+											-3,
+											3
+										],
+										"limitsType" : "breaks",
+										"range" : 
+										[
+											-3,
+											3,
+											1
+										],
+										"title" : "x",
+										"titleType" : "character"
+									},
+									"type" : "ScaleContinuous"
+								},
+								"yAxis" : 
+								{
+									"settings" : 
+									{
+										"breaks" : 
+										[
+											0,
+											0.25,
+											0.5,
+											0.75,
+											1
+										],
+										"breaksType" : "manual",
+										"expand" : 
+										[
+											0.050000000000000003,
+											0,
+											0.050000000000000003,
+											0
+										],
+										"labels" : 
+										[
+											"0.00",
+											"0.25",
+											"0.50",
+											"0.75",
+											"1.00"
+										],
+										"limits" : 
+										[
+											0,
+											1
+										],
+										"limitsType" : "breaks",
+										"range" : 
+										[
+											0,
+											1,
+											0.25
+										],
+										"title" : "\"Probability\" ~ (X <= x)",
+										"titleType" : "expression"
+									},
+									"type" : "ScaleContinuous"
+								}
+							},
+							"editable" : false,
+							"errorType" : "fatalError",
+							"height" : 320,
+							"name" : "plotCDF_cdfPlot",
+							"reasonNotEditable" : "unknown reason",
+							"revision" : 0,
+							"status" : "complete",
+							"title" : "Cumulative Probability Plot",
+							"width" : 600
+						}
+					},
+					"initCollapsed" : false,
+					"name" : "plotCDF",
+					"title" : "Cumulative Distribution Function"
+				},
+				"plotPDF" : 
+				{
+					"collection" : 
+					{
+						"plotPDF_pdfPlot" : 
+						{
+							"aspectRatio" : 0.0,
+							"convertible" : true,
+							"data" : "resources/1/_0_t1681915996197.png",
+							"editOptions" : 
+							{
+								"error" : "success",
+								"xAxis" : 
+								{
+									"settings" : 
+									{
+										"breaks" : 
+										[
+											-3,
+											-2,
+											-1,
+											0,
+											1,
+											2,
+											3
+										],
+										"breaksType" : "range",
+										"expand" : 
+										[
+											0.050000000000000003,
+											0,
+											0.050000000000000003,
+											0
+										],
+										"labels" : 
+										[
+											"-3",
+											"-2",
+											"-1",
+											"0",
+											"1",
+											"2",
+											"3"
+										],
+										"limits" : 
+										[
+											-3,
+											3
+										],
+										"limitsType" : "breaks",
+										"range" : 
+										[
+											-3,
+											3,
+											1
+										],
+										"title" : "x",
+										"titleType" : "character"
+									},
+									"type" : "ScaleContinuous"
+								},
+								"yAxis" : 
+								{
+									"settings" : 
+									{
+										"breaks" : 
+										[
+											0,
+											0.10000000000000001,
+											0.20000000000000001,
+											0.29999999999999999,
+											0.40000000000000002
+										],
+										"breaksType" : "manual",
+										"expand" : 
+										[
+											0,
+											0,
+											0.20000000000000001,
+											0
+										],
+										"labels" : 
+										[
+											"0.0",
+											"0.1",
+											"0.2",
+											"0.3",
+											"0.4"
+										],
+										"limits" : 
+										[
+											0,
+											0.39894228040143298
+										],
+										"limitsType" : "manual",
+										"range" : 
+										[
+											0,
+											0.40000000000000002,
+											0.10000000000000001
+										],
+										"title" : "Density",
+										"titleType" : "character"
+									},
+									"type" : "ScaleContinuous"
+								}
+							},
+							"editable" : false,
+							"errorType" : "fatalError",
+							"height" : 320,
+							"name" : "plotPDF_pdfPlot",
+							"reasonNotEditable" : "unknown reason",
+							"revision" : 0,
+							"status" : "complete",
+							"title" : "Density Plot",
+							"width" : 600
+						}
+					},
+					"initCollapsed" : false,
+					"name" : "plotPDF",
+					"title" : "Probability Density Function"
+				},
+				"plotQF" : 
+				{
+					"collection" : 
+					{
+						"plotQF_qfPlot" : 
+						{
+							"aspectRatio" : 0.0,
+							"convertible" : true,
+							"data" : "resources/1/_2_t1681915996687.png",
+							"editOptions" : 
+							{
+								"error" : "success",
+								"xAxis" : 
+								{
+									"settings" : 
+									{
+										"breaks" : 
+										[
+											0,
+											0.25,
+											0.5,
+											0.75,
+											1
+										],
+										"breaksType" : "manual",
+										"expand" : 
+										[
+											0.050000000000000003,
+											0,
+											0.050000000000000003,
+											0
+										],
+										"labels" : 
+										[
+											"0.00",
+											"0.25",
+											"0.50",
+											"0.75",
+											"1.00"
+										],
+										"limits" : 
+										[
+											0,
+											1
+										],
+										"limitsType" : "breaks",
+										"range" : 
+										[
+											0,
+											1,
+											0.25
+										],
+										"title" : "\"Probability\" ~ (X <= x)",
+										"titleType" : "expression"
+									},
+									"type" : "ScaleContinuous"
+								},
+								"yAxis" : 
+								{
+									"settings" : 
+									{
+										"breaks" : 
+										[
+											-3,
+											-2,
+											-1,
+											0,
+											1,
+											2,
+											3
+										],
+										"breaksType" : "range",
+										"expand" : 
+										[
+											0.050000000000000003,
+											0,
+											0.050000000000000003,
+											0
+										],
+										"labels" : 
+										[
+											"-3",
+											"-2",
+											"-1",
+											"0",
+											"1",
+											"2",
+											"3"
+										],
+										"limits" : 
+										[
+											-3,
+											3
+										],
+										"limitsType" : "breaks",
+										"range" : 
+										[
+											-3,
+											3,
+											1
+										],
+										"title" : "x",
+										"titleType" : "character"
+									},
+									"type" : "ScaleContinuous"
+								}
+							},
+							"editable" : false,
+							"errorType" : "fatalError",
+							"height" : 320,
+							"name" : "plotQF_qfPlot",
+							"reasonNotEditable" : "unknown reason",
+							"revision" : 0,
+							"status" : "complete",
+							"title" : "Quantile Plot",
+							"width" : 600
+						}
+					},
+					"initCollapsed" : false,
+					"name" : "plotQF",
+					"title" : "Quantile Function"
+				}
+			},
+			"rfile" : "",
+			"status" : "complete",
+			"title" : "Normal",
+			"titleDef" : "Normal",
+			"userdata" : null
+		}
+	],
+	"meta" : 
+	{
+		"notes" : 
+		{
+			"first" : 
+			{
+				"delta" : 
+				{
+					"ops" : 
+					[
+						{
+							"attributes" : 
+							{
+								"bold" : true
+							},
+							"insert" : "Description:"
+						},
+						{
+							"insert" : "\nThis fictional data set, \"Distributions\", provides variables generated from eight continous and four discrete probability distributions. \nVariable names indicate the probability distribution it was simulated from, the number of samples (10, 100, or 1000), and the parameter values in parentheses.\nThe purpose of this JASP file is do demonstrate the use of the Discover Distributions module. Specifically, we will focus on one particular distribution: the Normal (Gaussian) distribution. First, we will investigate its theoretical defininition. Then, we try to fit the Normal distribution to data. Then, we assess whether the Normal distribution fits the data.\n"
+						},
+						{
+							"attributes" : 
+							{
+								"bold" : true
+							},
+							"insert" : "References"
+						},
+						{
+							"insert" : "\nBlitzstein, J. K., & Hwang, J. (2014).\u00a0"
+						},
+						{
+							"attributes" : 
+							{
+								"italic" : true
+							},
+							"insert" : "Introduction to probability."
+						},
+						{
+							"insert" : "\u00a0Chapman and Hall/CRC.\nLeemis, L. M., & Pasupathy, R. (2019). The ties that bind.\u00a0"
+						},
+						{
+							"attributes" : 
+							{
+								"italic" : true
+							},
+							"insert" : "Significance"
+						},
+						{
+							"insert" : ".\n\nFor relationships with other distributions, visit www.math.wm.edu/~leemis/chart/UDR/UDR.html.\nhttps://en.wikipedia.org/wiki/List_of_probability_distributions\n"
+						}
+					]
+				},
+				"deltaAvailable" : true,
+				"format" : "html",
+				"text" : "<p><strong>Description:</strong></p><p>This fictional data set, \"Distributions\", provides variables generated from eight continous and four discrete probability distributions. </p><p>Variable names indicate the probability distribution it was simulated from, the number of samples (10, 100, or 1000), and the parameter values in parentheses.</p><p>The purpose of this JASP file is do demonstrate the use of the Discover Distributions module. Specifically, we will focus on one particular distribution: the Normal (Gaussian) distribution. First, we will investigate its theoretical defininition. Then, we try to fit the Normal distribution to data. Then, we assess whether the Normal distribution fits the data.</p><p><strong>References</strong></p><p>Blitzstein, J. K., &amp; Hwang, J. (2014).&nbsp;<em>Introduction to probability.</em>&nbsp;Chapman and Hall/CRC.</p><p>Leemis, L. M., &amp; Pasupathy, R. (2019). The ties that bind.&nbsp;<em>Significance</em>.</p><p><br></p><p>For relationships with other distributions, visit www.math.wm.edu/~leemis/chart/UDR/UDR.html.</p><p>https://en.wikipedia.org/wiki/List_of_probability_distributions</p>",
+				"visible" : true
+			}
+		},
+		"title" : "Distributions: Normal distribution"
+	}
+}

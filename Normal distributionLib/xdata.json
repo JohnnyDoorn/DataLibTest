@@ -1,0 +1,80 @@
+{
+	"Bern10(p=0.5)" : 
+	{
+		"labels" : 
+		[
+			[
+				0,
+				"0",
+				true
+			],
+			[
+				1,
+				"1",
+				true
+			]
+		],
+		"orgStringValues" : null
+	},
+	"Bern100(p=0.5)" : 
+	{
+		"labels" : 
+		[
+			[
+				0,
+				"0",
+				true
+			],
+			[
+				1,
+				"1",
+				true
+			]
+		],
+		"orgStringValues" : null
+	},
+	"Bern1000(p=0.5)" : 
+	{
+		"labels" : 
+		[
+			[
+				0,
+				"0",
+				true
+			],
+			[
+				1,
+				"1",
+				true
+			]
+		],
+		"orgStringValues" : null
+	},
+	"NBinom10(nsuccess=1,p=0.5)" : 
+	{
+		"labels" : 
+		[
+			[
+				0,
+				"0",
+				true
+			],
+			[
+				1,
+				"1",
+				true
+			],
+			[
+				2,
+				"2",
+				true
+			],
+			[
+				3,
+				"3",
+				true
+			]
+		],
+		"orgStringValues" : null
+	}
+}
